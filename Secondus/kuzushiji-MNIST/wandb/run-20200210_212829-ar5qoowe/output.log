@@ -1,0 +1,9 @@
+Scaling input data...
+Max value: 255.0
+Number of classes in this dataset: 10
+One hot encoding targets...
+Original input shape: (28, 28, 1)
+Traceback (most recent call last):
+  File "/Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/secondus.py", line 80, in <module>
+    x_train, x_val, y_train, y_val = train_test_split(X, y, test_size=0.2, random_state=512)
+NameError: name 'train_test_split' is not defined

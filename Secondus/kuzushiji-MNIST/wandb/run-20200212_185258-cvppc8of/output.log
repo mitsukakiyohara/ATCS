@@ -1,0 +1,11 @@
+Scaling input data...
+Max value: 255.0
+Number of classes in this dataset: 10
+One hot encoding targets...
+Traceback (most recent call last):
+  File "/Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/secondus.py", line 88, in <module>
+    np.randomseed(100)
+Original input shape: (28, 28, 1)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/numpy/__init__.py", line 220, in __getattr__
+    "{!r}".format(__name__, attr))
+AttributeError: module 'numpy' has no attribute 'randomseed'

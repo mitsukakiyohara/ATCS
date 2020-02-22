@@ -1,0 +1,99 @@
+Scaling input data...
+Max value: 255.0
+Number of classes in this dataset: 10
+One hot encoding targets...
+Original input shape: (28, 28, 1)
+2020-02-12 07:43:52.169184: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-02-12 07:43:52.203479: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x7f8ce7b08c00 executing computations on platform Host. Devices:
+2020-02-12 07:43:52.203502: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): Host, Default Version
+Model: "sequential_1"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+conv2d_1 (Conv2D)            (None, 26, 26, 32)        320       
+_________________________________________________________________
+activation_1 (Activation)    (None, 26, 26, 32)        0         
+_________________________________________________________________
+batch_normalization_1 (Batch (None, 26, 26, 32)        128       
+_________________________________________________________________
+conv2d_2 (Conv2D)            (None, 24, 24, 32)        9248      
+_________________________________________________________________
+activation_2 (Activation)    (None, 24, 24, 32)        0         
+_________________________________________________________________
+batch_normalization_2 (Batch (None, 24, 24, 32)        128       
+_________________________________________________________________
+max_pooling2d_1 (MaxPooling2 (None, 12, 12, 32)        0         
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 12, 12, 32)        0         
+_________________________________________________________________
+conv2d_3 (Conv2D)            (None, 10, 10, 64)        18496     
+_________________________________________________________________
+activation_3 (Activation)    (None, 10, 10, 64)        0         
+_________________________________________________________________
+batch_normalization_3 (Batch (None, 10, 10, 64)        256       
+_________________________________________________________________
+conv2d_4 (Conv2D)            (None, 8, 8, 64)          36928     
+_________________________________________________________________
+activation_4 (Activation)    (None, 8, 8, 64)          0         
+_________________________________________________________________
+batch_normalization_4 (Batch (None, 8, 8, 64)          256       
+_________________________________________________________________
+max_pooling2d_2 (MaxPooling2 (None, 4, 4, 64)          0         
+_________________________________________________________________
+dropout_2 (Dropout)          (None, 4, 4, 64)          0         
+_________________________________________________________________
+conv2d_5 (Conv2D)            (None, 4, 4, 128)         73856     
+_________________________________________________________________
+activation_5 (Activation)    (None, 4, 4, 128)         0         
+_________________________________________________________________
+batch_normalization_5 (Batch (None, 4, 4, 128)         512       
+_________________________________________________________________
+conv2d_6 (Conv2D)            (None, 4, 4, 128)         147584    
+_________________________________________________________________
+activation_6 (Activation)    (None, 4, 4, 128)         0         
+_________________________________________________________________
+batch_normalization_6 (Batch (None, 4, 4, 128)         512       
+_________________________________________________________________
+max_pooling2d_3 (MaxPooling2 (None, 2, 2, 128)         0         
+_________________________________________________________________
+dropout_3 (Dropout)          (None, 2, 2, 128)         0         
+_________________________________________________________________
+flatten_1 (Flatten)          (None, 512)               0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 2048)              1050624   
+_________________________________________________________________
+activation_7 (Activation)    (None, 2048)              0         
+_________________________________________________________________
+dropout_4 (Dropout)          (None, 2048)              0         
+_________________________________________________________________
+dense_2 (Dense)              (None, 10)                20490     
+_________________________________________________________________
+activation_8 (Activation)    (None, 10)                0         
+=================================================================
+Total params: 1,359,338
+Trainable params: 1,358,442
+Non-trainable params: 896
+_________________________________________________________________
+Train on 60000 samples, validate on 10000 samples
+Epoch 1/10
+ - 166s - loss: 0.5180 - accuracy: 0.8589 - val_loss: 0.4044 - val_accuracy: 0.9058
+Epoch 2/10
+ - 165s - loss: 0.2424 - accuracy: 0.9399 - val_loss: 0.4164 - val_accuracy: 0.9152
+Epoch 3/10
+ - 166s - loss: 0.2068 - accuracy: 0.9538 - val_loss: 0.3650 - val_accuracy: 0.9316
+Epoch 4/10
+ - 173s - loss: 0.1922 - accuracy: 0.9609 - val_loss: 0.3046 - val_accuracy: 0.9482
+Epoch 5/10
+ - 165s - loss: 0.1774 - accuracy: 0.9656 - val_loss: 0.2795 - val_accuracy: 0.9559
+Epoch 6/10
+ - 170s - loss: 0.1665 - accuracy: 0.9698 - val_loss: 0.2731 - val_accuracy: 0.9652
+Epoch 7/10
+ - 167s - loss: 0.1517 - accuracy: 0.9733 - val_loss: 0.3681 - val_accuracy: 0.9468
+Epoch 8/10
+ - 279s - loss: 0.1467 - accuracy: 0.9747 - val_loss: 0.3449 - val_accuracy: 0.9590
+Epoch 9/10
+ - 158s - loss: 0.1350 - accuracy: 0.9774 - val_loss: 0.3245 - val_accuracy: 0.9638
+Epoch 10/10
+ - 160s - loss: 0.1407 - accuracy: 0.9783 - val_loss: 0.4572 - val_accuracy: 0.9460
+
+Test accuracy: 0.9459999799728394

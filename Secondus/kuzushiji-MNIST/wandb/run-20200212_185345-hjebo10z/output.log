@@ -1,0 +1,129 @@
+Scaling input data...
+Max value: 255.0
+Number of classes in this dataset: 10
+One hot encoding targets...
+Original input shape: (28, 28, 1)
+2020-02-12 10:53:47.045232: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-02-12 10:53:47.084797: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x7fbb9d5b84d0 executing computations on platform Host. Devices:
+2020-02-12 10:53:47.084815: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): Host, Default Version
+Model: "sequential_1"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+conv2d_1 (Conv2D)            (None, 26, 26, 32)        320       
+_________________________________________________________________
+activation_1 (Activation)    (None, 26, 26, 32)        0         
+_________________________________________________________________
+batch_normalization_1 (Batch (None, 26, 26, 32)        128       
+_________________________________________________________________
+conv2d_2 (Conv2D)            (None, 24, 24, 32)        9248      
+_________________________________________________________________
+activation_2 (Activation)    (None, 24, 24, 32)        0         
+_________________________________________________________________
+batch_normalization_2 (Batch (None, 24, 24, 32)        128       
+_________________________________________________________________
+max_pooling2d_1 (MaxPooling2 (None, 12, 12, 32)        0         
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 12, 12, 32)        0         
+_________________________________________________________________
+conv2d_3 (Conv2D)            (None, 10, 10, 64)        18496     
+_________________________________________________________________
+activation_3 (Activation)    (None, 10, 10, 64)        0         
+_________________________________________________________________
+batch_normalization_3 (Batch (None, 10, 10, 64)        256       
+_________________________________________________________________
+conv2d_4 (Conv2D)            (None, 8, 8, 64)          36928     
+_________________________________________________________________
+activation_4 (Activation)    (None, 8, 8, 64)          0         
+_________________________________________________________________
+batch_normalization_4 (Batch (None, 8, 8, 64)          256       
+_________________________________________________________________
+max_pooling2d_2 (MaxPooling2 (None, 4, 4, 64)          0         
+_________________________________________________________________
+dropout_2 (Dropout)          (None, 4, 4, 64)          0         
+_________________________________________________________________
+conv2d_5 (Conv2D)            (None, 4, 4, 128)         73856     
+_________________________________________________________________
+activation_5 (Activation)    (None, 4, 4, 128)         0         
+_________________________________________________________________
+batch_normalization_5 (Batch (None, 4, 4, 128)         512       
+_________________________________________________________________
+conv2d_6 (Conv2D)            (None, 4, 4, 128)         147584    
+_________________________________________________________________
+activation_6 (Activation)    (None, 4, 4, 128)         0         
+_________________________________________________________________
+batch_normalization_6 (Batch (None, 4, 4, 128)         512       
+_________________________________________________________________
+max_pooling2d_3 (MaxPooling2 (None, 2, 2, 128)         0         
+_________________________________________________________________
+dropout_3 (Dropout)          (None, 2, 2, 128)         0         
+_________________________________________________________________
+flatten_1 (Flatten)          (None, 512)               0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 2048)              1050624   
+_________________________________________________________________
+activation_7 (Activation)    (None, 2048)              0         
+_________________________________________________________________
+dropout_4 (Dropout)          (None, 2048)              0         
+_________________________________________________________________
+dense_2 (Dense)              (None, 10)                20490     
+_________________________________________________________________
+activation_8 (Activation)    (None, 10)                0         
+=================================================================
+Total params: 1,359,338
+Trainable params: 1,358,442
+Non-trainable params: 896
+_________________________________________________________________
+Train on 60000 samples, validate on 10000 samples
+Epoch 1/10
+ - 110s - loss: 1.0522 - accuracy: 0.8184 - val_loss: 0.8887 - val_accuracy: 0.7304
+roc-auc: 0.9935 - roc-auc_val: 0.9765                                                                                                    
+
+Epoch 00001: val_loss improved from inf to 0.88867, saving model to /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/kmnist_weights.hdf5
+Epoch 2/10
+ - 113s - loss: 0.2220 - accuracy: 0.9325 - val_loss: 0.3140 - val_accuracy: 0.9118
+roc-auc: 0.9994 - roc-auc_val: 0.9943                                                                                                    
+
+Epoch 00002: val_loss improved from 0.88867 to 0.31399, saving model to /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/kmnist_weights.hdf5
+Epoch 3/10
+ - 112s - loss: 0.1598 - accuracy: 0.9507 - val_loss: 0.2438 - val_accuracy: 0.9331
+roc-auc: 0.9997 - roc-auc_val: 0.9961                                                                                                    
+
+Epoch 00003: val_loss improved from 0.31399 to 0.24384, saving model to /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/kmnist_weights.hdf5
+Epoch 4/10
+ - 111s - loss: 0.1286 - accuracy: 0.9600 - val_loss: 0.2134 - val_accuracy: 0.9416
+roc-auc: 0.9998 - roc-auc_val: 0.9969                                                                                                    
+
+Epoch 00004: val_loss improved from 0.24384 to 0.21342, saving model to /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/kmnist_weights.hdf5
+Epoch 5/10
+ - 110s - loss: 0.1113 - accuracy: 0.9658 - val_loss: 0.2026 - val_accuracy: 0.9474
+roc-auc: 0.9998 - roc-auc_val: 0.9971                                                                                                    
+
+Epoch 00005: val_loss improved from 0.21342 to 0.20256, saving model to /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/kmnist_weights.hdf5
+Epoch 6/10
+ - 112s - loss: 0.0937 - accuracy: 0.9711 - val_loss: 0.1856 - val_accuracy: 0.9500
+roc-auc: 0.9999 - roc-auc_val: 0.9975                                                                                                    
+
+Epoch 00006: val_loss improved from 0.20256 to 0.18555, saving model to /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/kmnist_weights.hdf5
+Epoch 7/10
+ - 175s - loss: 0.0850 - accuracy: 0.9734 - val_loss: 0.1764 - val_accuracy: 0.9541
+roc-auc: 0.9999 - roc-auc_val: 0.9976                                                                                                    
+
+Epoch 00007: val_loss improved from 0.18555 to 0.17635, saving model to /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/kmnist_weights.hdf5
+Epoch 8/10
+ - 195s - loss: 0.0782 - accuracy: 0.9757 - val_loss: 0.1652 - val_accuracy: 0.9574
+roc-auc: 0.9999 - roc-auc_val: 0.9979                                                                                                    
+
+Epoch 00008: val_loss improved from 0.17635 to 0.16525, saving model to /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/kmnist_weights.hdf5
+Epoch 9/10
+ - 8762s - loss: 0.0684 - accuracy: 0.9783 - val_loss: 0.1538 - val_accuracy: 0.9603
+roc-auc: 0.9999 - roc-auc_val: 0.9981                                                                                                    
+
+Epoch 00009: val_loss improved from 0.16525 to 0.15376, saving model to /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/kmnist_weights.hdf5
+Epoch 10/10
+ - 92s - loss: 0.0642 - accuracy: 0.9794 - val_loss: 0.1528 - val_accuracy: 0.9602
+roc-auc: 1.0 - roc-auc_val: 0.9982                                                                                                    
+
+Epoch 00010: val_loss improved from 0.15376 to 0.15281, saving model to /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/kmnist_weights.hdf5
+
+Test accuracy: 0.9602000117301941

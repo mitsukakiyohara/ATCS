@@ -1,0 +1,727 @@
+2020-02-12 10:53:45,663 DEBUG   MainThread:11557 [wandb_config.py:_load_defaults():112] no defaults not found in config-defaults.yaml
+2020-02-12 10:53:46,094 DEBUG   MainThread:11557 [meta.py:setup():94] code probe starting
+2020-02-12 10:53:46,095 DEBUG   MainThread:11557 [meta.py:_setup_code_git():49] probe for git information
+2020-02-12 10:53:46,097 DEBUG   MainThread:11557 [cmd.py:execute():719] Popen(['git', 'cat-file', '--batch-check'], cwd=/Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara, universal_newlines=False, shell=None, istream=<valid stream>)
+2020-02-12 10:53:46,112 DEBUG   MainThread:11557 [cmd.py:execute():719] Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara, universal_newlines=False, shell=None, istream=None)
+2020-02-12 10:53:46,124 DEBUG   MainThread:11557 [meta.py:_setup_code_program():58] scan for untracked program
+2020-02-12 10:53:46,124 DEBUG   MainThread:11557 [cmd.py:execute():719] Popen(['git', 'status', '--porcelain', '--untracked-files'], cwd=/Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara, universal_newlines=False, shell=None, istream=None)
+2020-02-12 10:53:46,141 DEBUG   MainThread:11557 [meta.py:setup():116] code probe done
+2020-02-12 10:53:46,150 DEBUG   MainThread:11557 [run_manager.py:__init__():536] Initialized sync for secondus/hjebo10z
+2020-02-12 10:53:46,155 INFO    MainThread:11557 [run_manager.py:wrap_existing_process():1134] wrapping existing process 11551
+2020-02-12 10:53:46,163 DEBUG   MainThread:11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): pypi.org:443
+2020-02-12 10:53:46,210 DEBUG   MainThread:11557 [connectionpool.py:_make_request():437] https://pypi.org:443 "GET /pypi/wandb/json HTTP/1.1" 200 41171
+2020-02-12 10:53:46,232 INFO    MainThread:11557 [run_manager.py:init_run():919] system metrics and metadata threads started
+2020-02-12 10:53:46,232 INFO    MainThread:11557 [run_manager.py:init_run():953] upserting run before process can begin, waiting at most 10 seconds
+2020-02-12 10:53:46,246 DEBUG   Thread-14 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 10:53:46,377 DEBUG   Thread-14 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 522
+2020-02-12 10:53:46,389 INFO    Thread-14 :11557 [run_manager.py:_upsert_run():1038] saving patches
+2020-02-12 10:53:46,390 DEBUG   Thread-14 :11557 [cmd.py:execute():719] Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara, universal_newlines=False, shell=None, istream=None)
+2020-02-12 10:53:46,413 DEBUG   Thread-14 :11557 [cmd.py:execute():719] Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara, universal_newlines=False, shell=None, istream=None)
+2020-02-12 10:53:46,435 DEBUG   Thread-14 :11557 [cmd.py:execute():719] Popen(['git', 'diff', '--abbrev=40', '--full-index', '--raw'], cwd=/Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara, universal_newlines=False, shell=None, istream=None)
+2020-02-12 10:53:46,449 DEBUG   Thread-14 :11557 [cmd.py:execute():719] Popen(['git', 'version'], cwd=/Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara, universal_newlines=False, shell=None, istream=None)
+2020-02-12 10:53:46,494 DEBUG   Thread-14 :11557 [cmd.py:execute():719] Popen(['git', 'merge-base', 'HEAD', 'c9c437cac7ad87b614acc729f88085973c6ec661'], cwd=/Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara, universal_newlines=False, shell=None, istream=None)
+2020-02-12 10:53:46,511 INFO    Thread-14 :11557 [run_manager.py:_upsert_run():1042] saving pip packages
+2020-02-12 10:53:46,512 INFO    Thread-14 :11557 [run_manager.py:_upsert_run():1044] initializing streaming files api
+2020-02-12 10:53:46,513 INFO    Thread-14 :11557 [run_manager.py:_upsert_run():1051] unblocking file change observer, beginning sync with W&B servers
+2020-02-12 10:53:46,514 INFO    MainThread:11557 [run_manager.py:wrap_existing_process():1151] informing user process we are ready to proceed
+2020-02-12 10:53:46,517 INFO    MainThread:11557 [run_manager.py:_sync_etc():1258] entering loop for messages from user process
+2020-02-12 10:53:46,519 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 10:53:46,628 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 10:53:47,096 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/config.yaml
+2020-02-12 10:53:47,103 DEBUG   Thread-3  :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 10:53:47,209 DEBUG   Thread-3  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 570
+2020-02-12 10:53:47,213 INFO    Thread-3  :11557 [run_manager.py:_on_file_created():672] file/dir created: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/output.log
+2020-02-12 10:53:47,213 INFO    Thread-3  :11557 [run_manager.py:_on_file_created():672] file/dir created: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/requirements.txt
+2020-02-12 10:53:47,213 INFO    Thread-3  :11557 [run_manager.py:_on_file_created():672] file/dir created: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 10:53:47,214 INFO    Thread-3  :11557 [run_manager.py:_on_file_created():672] file/dir created: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/diff.patch
+2020-02-12 10:53:48,097 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/output.log
+2020-02-12 10:53:48,525 INFO    MainThread:11557 [run_manager.py:_sync_etc():1281] received message from user process: {"save_policy": {"glob": "model-best.h5", "policy": "live"}}
+2020-02-12 10:53:49,104 DEBUG   Thread-16 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 10:53:49,221 DEBUG   Thread-16 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 789
+2020-02-12 10:53:49,226 DEBUG   Thread-16 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-02-12 10:53:49,481 DEBUG   Thread-16 :11557 [connectionpool.py:_make_request():437] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/mkiyohara/secondus/hjebo10z/___batch_archive_1.tgz?Expires=1581533689&GoogleAccessId=gorilla-cloud-storage%40wandb-production.iam.gserviceaccount.com&Signature=o7ZdGI6J6h9p%2F0zg%2BVMlndYhy3R47jnQWg4oobWDo7JR70QgthQsy%2Bd0ijlOw1y1HJuRG08SNcwP0W0%2FTP9uZ2TCHjsrMXkpNM6GaKK5axBUiHbWOV2UHrFFEZUptEmf3TZiioSgh8RjbmXAcfWgLqGY0gfi2m6sgQI6rjFq%2F%2F0xvCnvD4Grj6%2BOE9dqQqqP%2B4cJwCaXfSsvqvPfUWjGF2omENbQB5IsnSoecxxTJXrhdLsjn24MyWk5kRj1xLXpMCW0iF1coFKSrpzCN9osU1iK6nsnDAEfVoK4YauVwQDhPcLr1vMyhyiKkZAFuXcCk5i56RefRBgYsVGj6PrbZw%3D%3D HTTP/1.1" 200 0
+2020-02-12 10:53:49,519 DEBUG   Thread-7  :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 10:53:49,646 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 10:53:51,110 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/output.log
+2020-02-12 10:53:52,112 INFO    Thread-3  :11557 [run_manager.py:_on_file_created():672] file/dir created: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-summary.json
+2020-02-12 10:53:52,113 INFO    Thread-3  :11557 [run_manager.py:_on_file_created():672] file/dir created: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/media/graph/graph_summary_88a96b8f.graph.json
+2020-02-12 10:53:52,114 INFO    Thread-3  :11557 [run_manager.py:_on_file_created():672] file/dir created: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/media/graph
+2020-02-12 10:53:52,114 INFO    Thread-3  :11557 [run_manager.py:_on_file_created():672] file/dir created: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/media
+2020-02-12 10:53:52,197 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 10:53:55,111 DEBUG   Thread-17 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 10:53:55,253 DEBUG   Thread-17 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 845
+2020-02-12 10:53:55,263 DEBUG   Thread-17 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-02-12 10:53:55,539 DEBUG   Thread-17 :11557 [connectionpool.py:_make_request():437] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/mkiyohara/secondus/hjebo10z/media/graph/graph_summary_88a96b8f.graph.json?Expires=1581533695&GoogleAccessId=gorilla-cloud-storage%40wandb-production.iam.gserviceaccount.com&Signature=jGHUqX4UpdzLNHlGINkw1%2BYmB5mbTz%2BTrrux9Xx2FyDqiwc1XhMZO6JFVOSX%2B8zwZHKR3%2FKCZuCcrEV6ygTeAoxlxwq7h7Q%2FbPjUhieldKTl0e0wffJvYCMq87Yhc0%2FUR6tUWqHRgpIzl90FtukEXEhsNZZTpm%2FmO29Jf1WmXFLvrWzHpgg5zizAEL2OpTwCrPrCj%2B%2BqsPLrLzNIkTshQ1U1PmoDlryKn1ufVp%2BiNA6wn%2BTQ51A4EcXoUKP8XutBCH10z96zHBQEDm0qAcAPXf065NolVQMy9erLlqneilHOb%2BZAv6rU4GkI7qdUlbKPSjzGrSWFPgFf%2BfPzhjnCtw%3D%3D HTTP/1.1" 200 0
+2020-02-12 10:54:01,638 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 10:54:01,734 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 10:54:03,137 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 10:54:15,175 INFO    Thread-3  :11557 [run_manager.py:_on_file_created():672] file/dir created: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-events.jsonl
+2020-02-12 10:54:16,196 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 10:54:16,745 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 10:54:16,856 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 10:54:19,188 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 10:54:31,863 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 10:54:31,974 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 10:54:35,221 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 10:54:46,260 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-events.jsonl
+2020-02-12 10:54:46,304 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 10:54:46,405 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 10:54:46,986 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 10:54:47,099 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 10:54:51,276 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 10:55:02,304 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 10:55:02,406 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 10:55:07,326 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 10:55:16,345 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-events.jsonl
+2020-02-12 10:55:16,437 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 10:55:17,413 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 10:55:17,512 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 10:55:23,360 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 10:55:32,524 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 10:55:32,642 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 10:55:39,392 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 10:55:40,588 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 10:55:41,401 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-summary.json
+2020-02-12 10:55:41,401 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/output.log
+2020-02-12 10:55:41,401 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-history.jsonl
+2020-02-12 10:55:41,402 INFO    Thread-3  :11557 [run_manager.py:_on_file_created():672] file/dir created: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/model-best.h5
+2020-02-12 10:55:42,023 DEBUG   Thread-20 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 10:55:42,133 DEBUG   Thread-20 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 769
+2020-02-12 10:55:42,169 DEBUG   Thread-20 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-02-12 10:55:43,252 DEBUG   Thread-20 :11557 [connectionpool.py:_make_request():437] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/mkiyohara/secondus/hjebo10z/model-best.h5?Expires=1581533802&GoogleAccessId=gorilla-cloud-storage%40wandb-production.iam.gserviceaccount.com&Signature=eceYoBC6Ph50NwhclPh3a%2Bq0AnDkdnJ3Tm876ig%2Bu02veCV8ZI6QgKyCibULbAHPs875v7pWn0dt9ZeGY8ZkmZYC8K18B%2F827f45ZahEQzQX4AUGJ%2F6cZhrsXNV3qns3UQNEikvfoQSmMVOfSAl8zmCtqaGeee2%2BIRLwThyi9d8bSE6uyuyV99UWWVFv1spvUO7E44pJEUCSfMMAq2i9Ag%2FwOlg%2FY5mHFtrYrQDGoKE0byjn8JeWa8NOnbe0r3fzVwwr0nW2KOVAENbxUZ0xXkEfddXhJXTCoJAepIW5ln1qakRnHYztcyf62atnh2dU6ACM7pbksT1FgEw4SdtBbg%3D%3D HTTP/1.1" 200 0
+2020-02-12 10:55:47,410 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-events.jsonl
+2020-02-12 10:55:47,653 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 10:55:47,773 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 10:55:55,429 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 10:55:57,488 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 10:56:02,784 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 10:56:02,916 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 10:56:11,471 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 10:56:17,478 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-events.jsonl
+2020-02-12 10:56:17,550 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 10:56:18,173 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 10:56:18,330 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 10:56:19,480 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/output.log
+2020-02-12 10:56:27,509 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 10:56:29,414 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 10:56:33,342 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 10:56:33,582 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 10:56:43,554 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 10:56:48,566 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-events.jsonl
+2020-02-12 10:56:48,888 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 10:56:48,974 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 10:56:49,002 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 10:56:59,589 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 10:57:04,961 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 10:57:05,073 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 10:57:15,632 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 10:57:18,639 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-events.jsonl
+2020-02-12 10:57:18,675 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 10:57:20,083 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 10:57:20,195 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 10:57:30,675 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 10:57:35,205 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 10:57:35,615 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 10:57:46,707 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 10:57:48,767 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 10:57:49,714 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-events.jsonl
+2020-02-12 10:57:49,738 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 10:57:50,623 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 10:57:50,729 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 10:58:02,735 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 10:58:05,738 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 10:58:05,846 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 10:58:12,757 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-summary.json
+2020-02-12 10:58:12,757 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/output.log
+2020-02-12 10:58:12,758 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/model-best.h5
+2020-02-12 10:58:12,758 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-history.jsonl
+2020-02-12 10:58:12,883 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 10:58:18,776 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 10:58:19,778 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-events.jsonl
+2020-02-12 10:58:20,855 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 10:58:20,968 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 10:58:29,782 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 10:58:34,819 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 10:58:35,977 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 10:58:36,082 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 10:58:50,865 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 10:58:50,865 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-events.jsonl
+2020-02-12 10:58:51,094 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 10:58:51,192 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 10:58:52,870 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/output.log
+2020-02-12 10:59:06,202 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 10:59:06,299 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 10:59:06,905 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 10:59:20,909 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 10:59:20,940 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-events.jsonl
+2020-02-12 10:59:21,307 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 10:59:21,409 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 10:59:22,947 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 10:59:36,421 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 10:59:36,537 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 10:59:38,996 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 10:59:50,976 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 10:59:51,546 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 10:59:51,650 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 10:59:52,002 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 10:59:52,037 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-events.jsonl
+2020-02-12 10:59:55,047 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:00:06,662 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:00:06,769 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:00:11,081 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:00:21,782 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:00:21,900 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:00:22,068 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 11:00:22,119 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-events.jsonl
+2020-02-12 11:00:23,048 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 11:00:27,128 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:00:36,911 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:00:37,023 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:00:43,174 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:00:45,181 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-summary.json
+2020-02-12 11:00:45,182 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/output.log
+2020-02-12 11:00:45,182 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/model-best.h5
+2020-02-12 11:00:45,183 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-history.jsonl
+2020-02-12 11:00:45,216 DEBUG   Thread-21 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:00:45,349 DEBUG   Thread-21 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 786
+2020-02-12 11:00:45,359 DEBUG   Thread-21 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-02-12 11:00:46,474 DEBUG   Thread-21 :11557 [connectionpool.py:_make_request():437] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/mkiyohara/secondus/hjebo10z/model-best.h5?Expires=1581534105&GoogleAccessId=gorilla-cloud-storage%40wandb-production.iam.gserviceaccount.com&Signature=dmiwMYhHmd8XysZEh%2FfHf1cHUEkYuMugzcKC%2FjcdUK79K%2FITlxJlhuNuXqkvkxVYen8WDVUh38idWls26ibBvVJWyg%2BWONBBNr8weVYD0NO3uYLmtRljRNL4qNW2AYFZ5919KVlg5q0r8kzPH7LYwcp1uB0JYK6GpJU1FfomqG%2FHUZchx6U2EKi37S58cxBg3Ja37Xo10w4iqoRzH31WliYA3xG0nKelDK7NnUZSqFXYzVGt3YlJorFPx0ouvdTSGsVynGJX%2FP6HGUwFUgNlGnNKFmb%2BacsGPHt7U92RIlviWK56R5yrmqXlyzBN49i7lpylyyJi16RxwI8k7x0B7Q%3D%3D HTTP/1.1" 200 0
+2020-02-12 11:00:52,504 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:00:52,605 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:00:53,201 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-events.jsonl
+2020-02-12 11:00:53,923 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 11:00:59,217 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:01:07,616 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:01:07,716 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:01:15,259 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:01:22,726 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:01:22,835 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:01:23,285 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-events.jsonl
+2020-02-12 11:01:23,457 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 11:01:24,290 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/output.log
+2020-02-12 11:01:31,320 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:01:38,380 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:01:38,497 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:01:47,375 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:01:53,507 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:01:53,615 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:01:54,180 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 11:01:54,401 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-events.jsonl
+2020-02-12 11:02:03,426 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:02:08,627 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:02:08,722 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:02:19,479 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:02:24,031 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:02:24,142 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:02:24,268 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 11:02:25,502 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-events.jsonl
+2020-02-12 11:02:35,533 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:02:39,150 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:02:39,243 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:02:51,578 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:02:54,251 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:02:54,356 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:02:55,595 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-events.jsonl
+2020-02-12 11:02:56,072 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 11:03:07,622 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:03:09,456 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:03:09,544 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:03:14,638 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-summary.json
+2020-02-12 11:03:14,638 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/output.log
+2020-02-12 11:03:14,639 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/model-best.h5
+2020-02-12 11:03:14,640 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-history.jsonl
+2020-02-12 11:03:23,661 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:03:24,551 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:03:24,653 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:03:26,670 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-events.jsonl
+2020-02-12 11:03:27,322 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 11:03:39,695 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:03:40,347 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:03:40,481 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:03:54,746 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/output.log
+2020-02-12 11:03:55,488 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:03:55,603 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:03:55,747 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:03:56,563 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 11:03:56,748 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-events.jsonl
+2020-02-12 11:04:11,366 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:04:11,472 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:04:11,792 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:04:26,493 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:04:26,600 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:04:26,637 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 11:04:27,616 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 11:04:27,826 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:04:27,827 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-events.jsonl
+2020-02-12 11:04:41,611 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:04:41,709 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:04:43,872 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:04:56,717 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:04:56,824 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:04:57,682 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 11:04:57,913 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-events.jsonl
+2020-02-12 11:04:58,664 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 11:04:59,918 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:05:11,834 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:05:11,935 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:05:15,962 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:05:26,947 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:05:27,045 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:05:28,745 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 11:05:29,001 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-events.jsonl
+2020-02-12 11:05:32,006 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:05:42,056 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:05:42,169 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:05:44,048 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-summary.json
+2020-02-12 11:05:44,048 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/output.log
+2020-02-12 11:05:44,049 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/model-best.h5
+2020-02-12 11:05:44,049 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-history.jsonl
+2020-02-12 11:05:48,064 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:05:57,177 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:05:57,273 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:05:59,837 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 11:06:00,090 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-events.jsonl
+2020-02-12 11:06:04,101 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:06:12,281 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:06:12,379 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:06:20,149 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:06:26,166 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/output.log
+2020-02-12 11:06:27,391 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:06:27,495 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:06:29,914 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 11:06:30,181 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-events.jsonl
+2020-02-12 11:06:36,203 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:06:43,504 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:06:43,603 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:06:52,253 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:06:58,616 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:06:58,724 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:06:59,985 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 11:07:00,956 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 11:07:01,278 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-events.jsonl
+2020-02-12 11:07:08,303 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:07:13,732 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:07:13,842 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:07:24,342 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:07:28,850 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:07:28,960 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:07:31,045 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 11:07:31,366 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-events.jsonl
+2020-02-12 11:07:32,037 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 11:07:40,386 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:07:43,968 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:07:44,070 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:07:56,435 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:07:59,091 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:07:59,193 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:08:02,106 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 11:08:02,452 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-events.jsonl
+2020-02-12 11:08:12,479 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:08:14,206 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:08:14,361 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:08:18,497 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-summary.json
+2020-02-12 11:08:18,498 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/output.log
+2020-02-12 11:08:18,499 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/model-best.h5
+2020-02-12 11:08:18,499 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-history.jsonl
+2020-02-12 11:08:19,325 DEBUG   Thread-22 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:08:19,426 DEBUG   Thread-22 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 800
+2020-02-12 11:08:19,517 DEBUG   Thread-22 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-02-12 11:08:20,709 DEBUG   Thread-22 :11557 [connectionpool.py:_make_request():437] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/mkiyohara/secondus/hjebo10z/model-best.h5?Expires=1581534559&GoogleAccessId=gorilla-cloud-storage%40wandb-production.iam.gserviceaccount.com&Signature=F%2FOHcqpkyh%2Fu50baxlN39XjhlQP7B8aNXZd6FLOPfcwHbqs4T%2F%2B%2FgZGZJS7cnBIPltKIfPA5HjLQ9oGIxR21Nk%2BEExnOQ64cbBKuRi53YE0YEiwMgl90M9yXdyOdKTIJ60dYG5QbVJ6QA3GOCc34ZarzJUXM8NZBMDhiAyNsG9Z3f2TCQiFe3whrIPNcMUIqn9x66PX4pm%2F9i%2BXs%2BMV5Lx1VTbu6B9W5dAFAj9HKU%2FwmGNm9%2BjJQKK1%2FjcTncpY36S1F96bgAt6klm%2FeVoLXBbu3oPkWRN1JjsIG701ryNt1GAF3wkWWl9eah8RGIsPVRnYs7sJkhga7%2FSFBXfn4Dw%3D%3D HTTP/1.1" 200 0
+2020-02-12 11:08:28,522 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:08:29,374 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:08:29,490 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:08:32,536 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-events.jsonl
+2020-02-12 11:08:33,199 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 11:08:44,499 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:08:44,573 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:08:44,623 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:08:59,632 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:08:59,737 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:09:00,616 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:09:03,274 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 11:09:03,624 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-events.jsonl
+2020-02-12 11:09:04,282 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 11:09:07,634 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/output.log
+2020-02-12 11:09:14,749 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:09:14,879 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:09:16,658 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:09:29,895 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:09:30,014 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:09:32,708 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:09:34,343 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 11:09:34,710 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-events.jsonl
+2020-02-12 11:09:45,026 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:09:45,159 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:09:48,756 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:10:00,176 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:10:00,302 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:10:04,423 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 11:10:04,810 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:10:04,811 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-events.jsonl
+2020-02-12 11:10:05,416 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 11:10:15,317 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:10:15,437 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:10:20,869 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:10:30,450 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:10:30,565 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:10:35,482 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 11:10:35,916 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-events.jsonl
+2020-02-12 11:10:36,918 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:10:45,575 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:10:45,686 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:10:52,964 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:11:00,697 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:11:00,856 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:11:05,554 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 11:11:05,998 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-events.jsonl
+2020-02-12 11:11:07,000 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 11:11:09,009 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:11:15,890 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:11:16,014 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:11:25,065 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:11:31,034 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:11:31,168 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:11:37,073 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 11:11:37,111 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-events.jsonl
+2020-02-12 11:11:37,652 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 11:11:41,121 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:11:47,063 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:11:47,174 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:11:57,162 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:12:02,174 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-summary.json
+2020-02-12 11:12:02,175 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/output.log
+2020-02-12 11:12:02,176 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/model-best.h5
+2020-02-12 11:12:02,177 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-history.jsonl
+2020-02-12 11:12:02,196 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:12:02,312 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:12:07,190 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-events.jsonl
+2020-02-12 11:12:07,735 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 11:12:13,207 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:12:17,325 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:12:17,438 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:12:29,258 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:12:32,455 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:12:32,578 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:12:37,784 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 11:12:38,282 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-events.jsonl
+2020-02-12 11:12:45,307 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:12:47,593 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:12:47,728 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:13:01,354 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:13:02,742 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:13:02,851 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:13:07,918 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 11:13:08,380 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-events.jsonl
+2020-02-12 11:13:08,855 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 11:13:17,406 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:13:17,864 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:13:17,979 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:13:19,415 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/output.log
+2020-02-12 11:13:32,993 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:13:33,102 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:13:33,459 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:13:38,887 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 11:13:39,478 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-events.jsonl
+2020-02-12 11:13:48,116 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:13:48,232 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:13:49,504 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:14:03,246 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:14:03,393 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:14:05,566 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:14:08,967 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 11:14:09,582 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-events.jsonl
+2020-02-12 11:14:09,971 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 11:14:18,406 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:14:18,514 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:14:21,616 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:14:33,530 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:14:33,642 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:14:37,667 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:14:40,050 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 11:14:40,673 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-events.jsonl
+2020-02-12 11:14:41,037 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 11:14:48,653 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:14:48,765 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:14:53,713 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:15:03,779 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:15:03,904 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:15:09,744 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:15:10,747 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-events.jsonl
+2020-02-12 11:15:11,080 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 11:15:18,922 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:15:19,040 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:15:25,792 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:15:34,058 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:15:34,177 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:15:41,361 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 11:15:41,839 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:15:41,839 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-events.jsonl
+2020-02-12 11:15:42,350 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 11:15:49,212 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:15:49,336 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:15:57,886 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:16:04,358 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:16:04,482 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:16:11,919 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-events.jsonl
+2020-02-12 11:16:12,222 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 11:16:13,927 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:16:19,500 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:16:19,646 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:16:29,961 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:16:34,660 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:16:34,776 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:16:34,972 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-summary.json
+2020-02-12 11:16:34,973 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/output.log
+2020-02-12 11:16:34,974 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/model-best.h5
+2020-02-12 11:16:34,974 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-history.jsonl
+2020-02-12 11:16:35,022 DEBUG   Thread-23 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:16:35,151 DEBUG   Thread-23 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 802
+2020-02-12 11:16:35,177 DEBUG   Thread-23 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-02-12 11:16:36,975 DEBUG   Thread-23 :11557 [connectionpool.py:_make_request():437] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/mkiyohara/secondus/hjebo10z/model-best.h5?Expires=1581535055&GoogleAccessId=gorilla-cloud-storage%40wandb-production.iam.gserviceaccount.com&Signature=dIsEhDmB%2BF%2F80dBs%2FUABXKmINms3Jh6ouce%2F%2FIitM4Wf%2B%2FJTxb%2B7UPwTKdz4%2Fu%2BCtPXVD7q8TfepvGXEvPZ%2FpaOvhyAzgU8M9t1hhIqh3EegjX03kY66xkS1iZz2Wkncvi6gK6UPNktmuQx3n%2FH7oSEvkPcZr9i3MkMZTXJ24HY3l4l%2FoEBkU8Ife9PaYAhHcR1UkNvkcSq%2FgO0L63wrAP7M38I00Br11HHRa8MBP25VQtBGJcCvXZQTEQWMu7e3CgyqDmKQhBhWP3zoWLJBas9DCrdZ7El6NRBc1Bf3edQKB0Am5eppBjCvb25I7om32C%2Bg1FQWc2hagovpJHJObw%3D%3D HTTP/1.1" 200 0
+2020-02-12 11:16:42,992 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-events.jsonl
+2020-02-12 11:16:43,291 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 11:16:45,996 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:16:49,790 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:16:49,893 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:17:02,059 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:17:04,904 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:17:05,019 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:17:13,096 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-events.jsonl
+2020-02-12 11:17:13,360 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 11:17:18,111 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:17:20,032 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:17:20,135 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:17:34,157 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:17:35,153 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:17:35,267 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:17:43,400 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 11:17:44,177 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-events.jsonl
+2020-02-12 11:17:49,185 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/output.log
+2020-02-12 11:17:50,188 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:17:50,280 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:17:50,417 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:18:05,434 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:18:05,543 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:18:06,221 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:18:14,237 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-events.jsonl
+2020-02-12 11:18:14,439 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 11:18:20,640 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:18:20,746 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:18:22,346 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:18:35,757 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:18:35,864 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:18:38,389 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:18:44,404 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-events.jsonl
+2020-02-12 11:18:44,582 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 11:18:50,876 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:18:50,992 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:18:56,027 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:19:07,170 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:19:07,662 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:20:41,392 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:20:41,478 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 11:20:41,546 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:20:41,790 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 11:20:46,822 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-events.jsonl
+2020-02-12 11:20:47,534 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 11:20:56,565 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 11:20:56,683 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 11:20:57,889 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 12:52:03,270 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 12:52:04,602 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 12:52:07,052 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 12:52:07,059 ERROR   Thread-15 :11557 [retry.py:__call__():108] Retry attempt failed:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/urllib3/connection.py", line 157, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/urllib3/util/connection.py", line 61, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/socket.py", line 748, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/urllib3/connectionpool.py", line 672, in urlopen
+    chunked=chunked,
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/urllib3/connectionpool.py", line 376, in _make_request
+    self._validate_conn(conn)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/urllib3/connectionpool.py", line 994, in _validate_conn
+    conn.connect()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/urllib3/connection.py", line 334, in connect
+    conn = self._new_conn()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/urllib3/connection.py", line 169, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.VerifiedHTTPSConnection object at 0x1135df350>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/urllib3/connectionpool.py", line 720, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/urllib3/util/retry.py", line 436, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x1135df350>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/wandb/retry.py", line 95, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/wandb/apis/internal.py", line 110, in execute
+    return self.client.execute(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/gql/transport/requests.py", line 38, in execute
+    request = requests.post(self.url, **post_args)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/requests/api.py", line 116, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x1135df350>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2020-02-12 12:52:10,180 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 12:52:11,261 WARNING Thread-7  :11557 [util.py:request_with_retry():596] requests_with_retry encountered retryable exception: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer')). args: ('https://api.wandb.ai/files/mkiyohara/secondus/hjebo10z/file_stream',), kwargs: {'json': {'complete': False, 'failed': False}}
+2020-02-12 12:52:11,582 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 12:52:11,868 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 12:52:13,453 DEBUG   Thread-7  :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (2): api.wandb.ai:443
+2020-02-12 12:52:14,370 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 12:52:15,190 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-events.jsonl
+2020-02-12 12:52:15,284 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 12:52:26,218 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 12:52:26,856 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 12:52:27,366 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 13:24:20,872 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 13:24:20,959 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 13:24:21,089 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 13:24:21,861 WARNING Thread-7  :11557 [util.py:request_with_retry():596] requests_with_retry encountered retryable exception: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer')). args: ('https://api.wandb.ai/files/mkiyohara/secondus/hjebo10z/file_stream',), kwargs: {'json': {'complete': False, 'failed': False}}
+2020-02-12 13:24:23,978 DEBUG   Thread-7  :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (3): api.wandb.ai:443
+2020-02-12 13:24:24,085 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 13:24:24,804 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-events.jsonl
+2020-02-12 13:24:24,905 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 13:24:36,047 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 13:24:36,405 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 13:24:44,523 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 13:24:51,504 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 13:24:51,913 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 13:24:55,020 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 13:24:56,131 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-events.jsonl
+2020-02-12 13:24:56,219 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 13:25:06,981 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 13:25:07,208 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 13:25:08,179 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 13:43:44,282 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 13:43:44,777 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 13:43:48,050 WARNING Thread-7  :11557 [util.py:request_with_retry():596] requests_with_retry encountered retryable exception: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer')). args: ('https://api.wandb.ai/files/mkiyohara/secondus/hjebo10z/file_stream',), kwargs: {'json': {'complete': False, 'failed': False}}
+2020-02-12 13:43:50,141 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-history.jsonl
+2020-02-12 13:43:50,141 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/output.log
+2020-02-12 13:43:50,141 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 13:43:50,141 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-summary.json
+2020-02-12 13:43:50,142 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/model-best.h5
+2020-02-12 13:43:50,426 DEBUG   Thread-7  :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (4): api.wandb.ai:443
+2020-02-12 13:43:50,541 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 13:43:50,628 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 13:43:51,141 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/model-best.h5
+2020-02-12 13:43:51,141 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-events.jsonl
+2020-02-12 13:43:51,456 DEBUG   Thread-24 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 13:43:51,571 DEBUG   Thread-24 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 798
+2020-02-12 13:43:51,702 DEBUG   Thread-24 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-02-12 13:43:53,968 DEBUG   Thread-24 :11557 [connectionpool.py:_make_request():437] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/mkiyohara/secondus/hjebo10z/model-best.h5?Expires=1581543891&GoogleAccessId=gorilla-cloud-storage%40wandb-production.iam.gserviceaccount.com&Signature=HUC5mI2EIsGzfMIjb6a208wkKYREp%2BxkIf%2FAy%2BSubL%2B4vujHccut8vPwnlTlcy7AObMV%2FgoiQPn%2BodRLaAX5bGJha%2B0pD8VaFg5QzoBHYtmJZARsA2CTq3VAwwV827eLCIpt8p75ua3fodIL3OkyhWfNaWt7bG7qolriIP6LyXv89bvikLs0iCHAFu7L7SuUuQe%2FKFzAo85o8Xhdj9%2FAnS%2Bdf8ii9TMEpfvR3VFxkfMvee5%2FNePcniFJtcDkKS7GsLQl2Ht257DxN%2F2GGGtbh0PRtPTl%2FoNZcavMiwMzItdC2lrxjDbzJ6xunsvRn9pKnpYyii3g3AZuf2wkH4boQw%3D%3D HTTP/1.1" 200 0
+2020-02-12 13:43:59,812 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 13:44:00,036 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 13:52:02,929 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 13:52:08,884 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 13:52:09,274 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 13:52:14,661 WARNING Thread-7  :11557 [util.py:request_with_retry():596] requests_with_retry encountered retryable exception: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer')). args: ('https://api.wandb.ai/files/mkiyohara/secondus/hjebo10z/file_stream',), kwargs: {'json': {'files': {'wandb-events.jsonl': {'offset': 53, 'content': ['{"system.cpu": 82.3, "system.memory": 46.17, "system.disk": 20.7, "system.proc.memory.availableMB": 8820.87, "system.proc.memory.rssMB": 243.1, "system.proc.memory.percent": 1.48, "system.proc.cpu.threads": 30.0, "system.network.sent": 115444736, "system.network.recv": 62909440, "_wandb": true, "_timestamp": 1581543830, "_runtime": 10205}\n']}}}}
+2020-02-12 13:52:16,952 DEBUG   Thread-7  :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (5): api.wandb.ai:443
+2020-02-12 13:52:17,255 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 13:52:17,956 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-events.jsonl
+2020-02-12 13:52:18,961 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 13:52:24,273 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 13:52:24,840 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 13:52:34,992 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/output.log
+2020-02-12 13:52:34,993 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 13:52:39,847 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 13:52:39,956 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 13:52:48,016 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-events.jsonl
+2020-02-12 13:52:48,054 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 13:52:51,022 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 13:52:54,965 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 13:52:55,149 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 13:53:07,069 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 13:53:10,157 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 13:53:10,275 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 13:53:18,126 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 13:53:19,100 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-events.jsonl
+2020-02-12 13:53:19,148 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 13:53:23,109 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 13:53:25,286 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 13:53:25,391 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 13:53:39,154 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 13:53:40,402 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 13:53:40,524 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 13:53:49,187 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-events.jsonl
+2020-02-12 13:53:49,209 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 13:53:55,201 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 13:53:55,532 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 13:53:55,635 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 13:54:07,229 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-summary.json
+2020-02-12 13:54:07,229 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/output.log
+2020-02-12 13:54:07,230 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/model-best.h5
+2020-02-12 13:54:07,232 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-history.jsonl
+2020-02-12 13:54:07,264 DEBUG   Thread-25 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 13:54:07,401 DEBUG   Thread-25 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 794
+2020-02-12 13:54:07,556 DEBUG   Thread-25 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-02-12 13:54:09,762 DEBUG   Thread-25 :11557 [connectionpool.py:_make_request():437] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/mkiyohara/secondus/hjebo10z/model-best.h5?Expires=1581544507&GoogleAccessId=gorilla-cloud-storage%40wandb-production.iam.gserviceaccount.com&Signature=mqoti%2BPaNfvDEwbkhyGCUi9snVah6Fb%2FrexeQpJt8ClT9NdbDt9WlkF5NSI2SedvmGcPSAnDBOicjWQTiC%2FEYdKHp7dWcswQkHgZH65%2FDAMjSMhowpd7SuaWiXFUFQg3PwC%2FDme1LPuipHyF0WTUukIPpl7%2BEB09wyVt2CWnecLiyZIWS9pFW6HaUOLAn9ULIBaAX%2BUBeDPVPjii0lD34geAZ7MAi0l%2BwmfNmvI26ilidPOKIc1o2ZoTHrSn3hdx9Lid5SFWmV02G2SqHbgi88UAohLMulimv56N3W%2B34Hk8p%2Bly5OyQJpq6YLo4o5Ka8hz%2FO2KUM98OSc5VHLKZPg%3D%3D HTTP/1.1" 200 0
+2020-02-12 13:54:10,643 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 13:54:10,752 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 13:54:11,239 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 13:54:20,247 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 13:54:20,261 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-events.jsonl
+2020-02-12 13:54:25,766 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 13:54:25,908 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 13:54:27,278 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 13:54:40,921 DEBUG   Thread-15 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 13:54:41,025 DEBUG   Thread-15 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 46
+2020-02-12 13:54:43,334 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 13:54:49,345 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/output.log
+2020-02-12 13:54:50,346 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-events.jsonl
+2020-02-12 13:54:51,297 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 13:54:54,221 INFO    MainThread:11557 [run_manager.py:_sync_etc():1281] received message from user process: {"exitcode": 0}
+2020-02-12 13:54:54,222 INFO    MainThread:11557 [run_manager.py:_sync_etc():1367] closing log streams and sending exitcode to W&B
+2020-02-12 13:54:54,222 INFO    MainThread:11557 [run_manager.py:shutdown():1058] shutting down system stats and metadata service
+2020-02-12 13:54:54,360 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/output.log
+2020-02-12 13:54:54,361 INFO    Thread-3  :11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-events.jsonl
+2020-02-12 13:54:54,361 INFO    Thread-3  :11557 [run_manager.py:_on_file_created():672] file/dir created: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/model.h5
+2020-02-12 13:54:55,228 INFO    MainThread:11557 [run_manager.py:shutdown():1070] stopping streaming files and file change observer
+2020-02-12 13:54:55,366 INFO    MainThread:11557 [run_manager.py:_on_file_modified():683] file/dir modified: /Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/wandb/run-20200212_185345-hjebo10z/wandb-metadata.json
+2020-02-12 13:54:55,381 DEBUG   MainThread:11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 13:54:55,517 DEBUG   MainThread:11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 570
+2020-02-12 13:54:56,262 DEBUG   Thread-26 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 13:54:56,322 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 311
+2020-02-12 13:54:56,345 DEBUG   Thread-27 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 13:54:56,366 DEBUG   Thread-26 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 788
+2020-02-12 13:54:56,372 DEBUG   Thread-26 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-02-12 13:54:56,393 DEBUG   Thread-7  :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /files/mkiyohara/secondus/hjebo10z/file_stream HTTP/1.1" 200 308
+2020-02-12 13:54:56,398 INFO    MainThread:11557 [run_manager.py:_sync_etc():1386] rendering summary
+2020-02-12 13:54:56,400 INFO    MainThread:11557 [run_manager.py:_sync_etc():1419] syncing files to cloud storage
+2020-02-12 13:54:56,455 DEBUG   Thread-28 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): api.wandb.ai:443
+2020-02-12 13:54:56,459 DEBUG   Thread-27 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 765
+2020-02-12 13:54:56,465 DEBUG   Thread-27 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-02-12 13:54:56,571 DEBUG   Thread-28 :11557 [connectionpool.py:_make_request():437] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 789
+2020-02-12 13:54:56,580 DEBUG   Thread-28 :11557 [connectionpool.py:_new_conn():959] Starting new HTTPS connection (1): storage.googleapis.com:443
+2020-02-12 13:54:57,133 DEBUG   Thread-28 :11557 [connectionpool.py:_make_request():437] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/mkiyohara/secondus/hjebo10z/___batch_archive_2.tgz?Expires=1581544556&GoogleAccessId=gorilla-cloud-storage%40wandb-production.iam.gserviceaccount.com&Signature=bcvvdpJv0768HauSOhkCm7tQGUxzvqhBC7qPP5Rj07lZnJxG7485I5LC85A941NipiQuZoV4mQBIaaRBKefLpB1wBni5uwdQ6%2BnbRW2b3h%2FAkpk6%2BZWuKKN9AxCnAMkJJHeq8wksk19U0qA8a4VKL9kvzVsod7r0ehlNOlovpOyZq2ulXXz7%2BOwdZ%2FOVBZLhQxW9A%2B982yJSdyLMr8nv177eQja8r9XuheHO4GFNAhOoRYOw7UdTLgNAu0vAbDWJ5qFktexGsEhwHYNz23LgxocOKhioNEbafSl8%2FbMUDawfjifhn2OoLFfizkpGfHWRjb9wzzSpC6smDg6%2FkrRuvA%3D%3D HTTP/1.1" 200 0
+2020-02-12 13:54:58,123 DEBUG   Thread-26 :11557 [connectionpool.py:_make_request():437] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/mkiyohara/secondus/hjebo10z/model-best.h5?Expires=1581544556&GoogleAccessId=gorilla-cloud-storage%40wandb-production.iam.gserviceaccount.com&Signature=VTts%2B1QYM%2FuYKxZ2F2alM9J7GocychMUabX%2FGo04ggY%2F29v3hnw6ESpPp4R88ZEZOBB6sPETz3Qw4URXX2NKaLYm8ZLvkxoNe%2B814Yt4va2dUJOvfjjkhQ5nPQekbm4%2FKJCytz4N5nGjVjsGhH6eIDOLHvYAXjnb8RKhfBoIIl1EY6GgiGkDQ9fAUeAVyeNvgWInXIrPJjvADvKWzc1k0ULCipUeUFOWf3CaPWMjS%2FNUpvXehR4UUr4MXTnoa7pv2vRSKhVedJxxChWONxKH104m9BK4msLLuWl3rAeb9WexKRqHmRGrtSjA2pqiOzSnzoVrYO%2FMFEUpWuNtTNBNsw%3D%3D HTTP/1.1" 200 0
+2020-02-12 13:54:58,246 DEBUG   Thread-27 :11557 [connectionpool.py:_make_request():437] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/mkiyohara/secondus/hjebo10z/model.h5?Expires=1581544556&GoogleAccessId=gorilla-cloud-storage%40wandb-production.iam.gserviceaccount.com&Signature=lxYh1nyP6Zlpmbgl7ez66deyq3GyLWJViLWiVyVm67P4ZvHk9VvejALlL%2FMcBC04hMB7TKAU5fUR%2FOIHxfLj2tWHzmrNaKSIOYq7yj4pNs4zhKRXLAcu9spXu1%2Bh%2Bsm%2BCgaOqxtSgSAsIZkVru1u1WfsbWbRS2myBRMOWsFEwXKJiz7FOmIGLUDQUTjArsqrqSNAUtb63gnqq4kfI%2BQYTQAmtwuRAfZMkBFYp27kMJLQo%2Fu91GPXbHGf6hnk57wumPYnPnrYXrJsRkFilw%2BdLv5lMtB42%2FO6mIuqe4%2F8q89605RNjYT1Xq9PrYs0DhuDrZkTM50AnF3uun8PF5fgeQ%3D%3D HTTP/1.1" 200 0
+2020-02-12 13:54:59,445 INFO    MainThread:11557 [run_manager.py:_sync_etc():1434] syncing complete: https://app.wandb.ai/mkiyohara/secondus/runs/hjebo10z
+2020-02-12 13:54:59,445 INFO    MainThread:11557 [hjebo10z:run_manager.py:_sync_etc():1434] syncing complete: https://app.wandb.ai/mkiyohara/secondus/runs/hjebo10z

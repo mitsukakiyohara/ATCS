@@ -1,0 +1,23 @@
+{
+    "root": "/Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara",
+    "program": "/Users/mitsukakiyohara/GitHub/ATCS_y4_-mitsukakiyohara/Secondus/kuzushiji-MNIST/secondus.py",
+    "git": {
+        "remote": "https://github.com/MenloSchool-ATCS/ATCS_y4_-mitsukakiyohara.git",
+        "commit": "c9c437cac7ad87b614acc729f88085973c6ec661"
+    },
+    "email": null,
+    "startedAt": "2020-02-12T18:52:58.838543",
+    "host": "Mitsukas-MacBook-Pro.local",
+    "username": "mitsukakiyohara",
+    "executable": "/Library/Frameworks/Python.framework/Versions/3.7/bin/python3",
+    "os": "Darwin-18.7.0-x86_64-i386-64bit",
+    "python": "3.7.4",
+    "cpu_count": 8,
+    "args": [],
+    "state": "failed",
+    "jobType": null,
+    "mode": "run",
+    "project": "secondus",
+    "heartbeatAt": "2020-02-12T18:53:01.777998",
+    "exitcode": 1
+}

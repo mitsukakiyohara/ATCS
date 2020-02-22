@@ -1,0 +1,325 @@
+diff --git a/SamplePyAdvPracTester.py b/SamplePyAdvPracTester.py
+index 57c4e7f..3bbc1c3 100644
+--- a/SamplePyAdvPracTester.py
++++ b/SamplePyAdvPracTester.py
+@@ -3,6 +3,7 @@
+ import math
+ f=0 
+ extra=0
++num_exer=5
+ 
+ try:
+     import PythonAdvPractice_2019 as pap
+@@ -106,6 +107,103 @@ try:
+         print("FAILED: list_overlap_comp threw an exception.")
+         f += 1
+ 
++# More practice with Dictionaries, Files, and Text!
++# Implement the following functions:
++
++    test_files = []
++    test_files.append("rj_prologue.txt")
++    test_files.append("permutation.txt")
++    test_files.append("UncannyValley.txt")
++    
++# def longest_sentence(text_file_name):
++    """ Read from the text file, split the data into sentences,
++        and return the longest sentence in the file.
++    """
++    answers = []
++    answers.append("The fearful passage of their death-mark'd love,\nAnd the continuance of their parents' rage,\nWhich, but their children's end, nought could remove,\nIs now the two hours' traffic of our stage")
++    answers.append("Objects out of sight didn't \"vanish\" entirely, if they influenced the ambient light, but Paul knew that the calculations would rarely be pursued beyond the crudest first-order approximations: Bosch's Garden of Earthly Delights reduced to an average reflectance value, a single grey rectangle - because once his back was turned, any more detail would have been wasted")
++    answers.append("Later, in a room of his own, his bed had come with hollow metal posts whose plastic caps were easily removed, allowing him to toss in chewed pencil stubs, pins that had held newly bought school shirts elaborately folded around cardboard packaging, tacks that he'd bent out of shape with misaligned hammer blows while trying to form pictures in zinc on lumps of firewood, pieces of gravel that had made their way into his shoes, dried snot scraped from his handkerchief, and tiny, balled-up scraps of paper, each bearing a four- or five-word account of whatever seemed important at the time, building up a record of his life like a core sample slicing through geological strata, a find for future archaeologists far more exciting than any diary")
++    try:
++        for i in range(len(test_files)):
++            output = pap.longest_sentence(test_files[i])
++            if  output.strip().lower().rstrip('.!?;') != answers[i].strip().lower().rstrip('.!?;'):
++                print("FAILED: longest_sentence(" + test_files[i] + ") returned: \n" + str(output) + "\n instead of: \n" + str(answers[i]))
++                f += 0.333333333
++            else:
++                print("passed: longest_sentence(" + test_files[i] + ") with: \n" + str(output))
++    except Exception as ex:
++        print(ex)
++        print("FAILED: longest_sentence threw an exception.")
++        f += 1
++
++
++# def longest_word(text_file_name):
++    """ Read from the text file, split the data into words,
++        and return the longest word in the file.
++    """
++    answers = []
++    answers.append("misadventured")
++    answers.append("soon-to-be-forgotten")
++    answers.append("jurisprudentially")
++
++    try:
++        for i in range(len(test_files)):
++            output = pap.longest_word(test_files[i])
++            if len(output) != len(answers[i]):
++                print("FAILED: longest_word(" + test_files[i] + ") returned: " + str(output) + " instead of: " + str(answers[i]))
++                f += 0.333333333
++            else:
++                print("passed: longest_word(" + test_files[i] + ") with: " + str(output))
++    except Exception as ex:
++        print(ex)
++        print("FAILED: longest_word threw an exception.")
++        f += 1
++
++# def num_unique_words(text_file_name):
++    """ Read from the text file, split the data into words,
++        and return the number of unique words in the file.
++        HINT: Use a set!
++    """
++    answers = []
++    answers.append(80)
++    answers.append(1540)
++    answers.append(2962)
++
++    try:
++        for i in range(len(test_files)):
++            output = pap.num_unique_words(test_files[i])
++            if math.fabs(output - answers[i]) > max(2,answers[i]/100):
++                print("FAILED: num_unique_words(" + test_files[i] + ") returned: " + str(output) + " instead of: " + str(answers[i]))
++                f += 0.333333333
++            else:
++                print("passed: num_unique_words(" + test_files[i] + ") with: " + str(output))
++    except Exception as ex:
++        print(ex)
++        print("FAILED: num_unique_words threw an exception.")
++        f += 1
++
++# def most_frequent_word(text_file_name):
++    """ Read from the text file, split the data into words,
++        and return a tuple with the most frequently occuring word 
++        in the file and the count of the number of times it apapared.
++    """
++    answers = []
++    answers.append(('their',6))
++    answers.append(('the', 266))
++    answers.append(('the', 720))
++    try:
++        for i in range(len(test_files)):
++            output = pap.most_frequent_word(test_files[i])
++            if  output[0].lower() != answers[i][0].lower() and math.fabs(output[1] - answers[i][1]) > max(2,answers[i][1]/100) :
++                print("FAILED: most_frequent_word(" + test_files[i] + ") returned: " + str(output) + " instead of: " + str(answers[i]))
++                f += 0.333333333
++            else:
++                print("passed: most_frequent_word(" + test_files[i] + ") with: " + str(output))
++    except Exception as ex:
++        print(ex)
++        print("FAILED: most_frequent_word threw an exception.")
++        f += 1
++
+ except Exception as ex:
+     print(ex)
+     print("FAILED: PythonAdvPractice2019.py file does not execute at all, or this file was not implemented.")
+@@ -113,6 +211,5 @@ except Exception as ex:
+ 
+ print("\n")
+ print("SUMMARY:")
+-print("Passed " + str(round(2-f,2)) + " out of 2 exercises.")
+-print("Earned " + str(round(extra,2)) + " extra credits.")
++print("Passed " + str(round(num_exer-f,2)) + " out of " + str(num_exer) + " exercises.")
+ 
+diff --git a/Secondus/kuzushiji-MNIST/.DS_Store b/Secondus/kuzushiji-MNIST/.DS_Store
+index 0008d27..1c03729 100644
+Binary files a/Secondus/kuzushiji-MNIST/.DS_Store and b/Secondus/kuzushiji-MNIST/.DS_Store differ
+diff --git a/Secondus/kuzushiji-MNIST/secondus.py b/Secondus/kuzushiji-MNIST/secondus.py
+index 4a5f431..46fbd56 100644
+--- a/Secondus/kuzushiji-MNIST/secondus.py
++++ b/Secondus/kuzushiji-MNIST/secondus.py
+@@ -14,6 +14,9 @@ import tensorflow as tf
+ from tensorflow import keras
+ from keras import backend as K
+ 
++import wandb
++wandb.init(project="secondus")
++
+ """
+ Credits: 
+ @online{clanuwat2018deep,
+@@ -74,13 +77,13 @@ if num_classes > 2:
+ 
+ print("Original input shape: " + str(x_train.shape[1:]))
+ 
+-
+-
+ from keras.models import Sequential 
+ from keras.layers import Dense, Flatten, Conv2D, Activation, MaxPooling2D, Dropout, BatchNormalization
+ 
+ model = Sequential()
+ 
++#relabel with variables 
++
+ """
+ 1st Case: Running a CNN [Using a similar code to Assignment Quebec]
+ 
+@@ -136,8 +139,24 @@ score = model.evaluate(x_test, y_test, verbose=0)
+ print('\nTest accuracy:', score[1])
+ """
+ 
++#3rd case: running a normal CNN but implementing callbacks 
++"""
++Purpose of having callbacks: 
++	Add the model checkpoint to save the best weight of the model.
++	Add early stopping to stop training once the validation loss stops decreasing for 5 rounds.
++	New class to compute, keep and print the auc score for each epoch.
++"""
++from tensorflow.python.keras.callbacks import ModelCheckpoint
++from tensorflow.keras.callbacks import EarlyStopping
++from sklearn.model_selection import train_test_split
++from sklearn.metrics import classification_report, roc_auc_score, accuracy_score
++from sklearn.metrics import confusion_matrix
++from tensorflow.keras.callbacks import Callback
++
++np.random.seed(515)
+ 
+-#2nd case: running a normal CNN using only 10 layers 
++
++#2nd case: running a normal CNN using only 10 layers
+ model.add(Conv2D(32, kernel_size=(3, 3), activation='relu', input_shape=(img_rows, img_cols, 1)))
+ model.add(Conv2D(32, (3, 3), activation='relu'))
+ model.add(MaxPooling2D(pool_size=(2, 2)))
+@@ -147,59 +166,67 @@ model.add(Flatten())
+ model.add(Dense(128, activation='relu'))
+ model.add(Dropout(rate=0.25))
+ model.add(Dense(num_classes, activation='softmax'))
+-
+-#Compiling [Optimizer: Adam, Loss: Categorical Crossentropy]
+-model.compile(loss='categorical_crossentropy',
+-              optimizer='adam',
+-              metrics=['accuracy'])
+ model.summary()
+ 
+-#Fittting [Epochs: 100, Batch Class: 128]
+-hist = model.fit(x_train, y_train,
+-                 batch_size=128,
+-                 epochs=100,
+-                 verbose=2,
+-                 validation_data=(x_test, y_test),
+-                )
++# Add WandbCallback() to callbacks
++history = model.fit(x_train, y_train,
++                    epochs=epochs,
++                    verbose=2,
++                    validation_data=(x_test, y_test),
++              		shuffle=True,
++                    callbacks=[WandbCallback()],
++                    use_multiprocessing=True)
+ 
+ score = model.evaluate(x_test, y_test, verbose=0)
+ print('\nTest accuracy:', score[1])
+ 
++# Save results to wandb directory
++model.save(os.path.join(wandb.run.dir, "model.h5"))
++
++
++
++#Compiling [Optimizer: Adam, Loss: Categorical Crossentropy]
++#model.compile(loss='categorical_crossentropy',
++              #optimizer='adam',
++              #metrics=['accuracy'])
++
+ """
+ Plotting Method
+ 
+ Credits to: https://github.com/netsatsawat
+ The author used plotly as a way to plot down the points of each epoch run 
+ 
+-"""
++
+ import plotly.offline as py
+ import plotly.graph_objs as go
+ import plotly.tools as tls
+ import plotly.figure_factory as ff
+ 
+ def reshape_3d_to_2d(data_array: np.ndarray) -> np.ndarray:
+-    """
++    
++
+     Function to convert 3d numpy array to 2d numpy array
+     @Arg:
+       data_array: the numpy array, we want to convert
+       
+     Return:
+       The converted numpy array
+-    """
++
+     out_array = data_array.reshape(data_array.shape[0], 
+                                    data_array.shape[1] * data_array.shape[2])
+     return out_array
+ 
+ 
+ def compute_variance(kmnist_img: np.ndarray) -> (list, np.ndarray):
+-    """
++
+     Function to compute the individual and cumulative variance explained 
+     @Args:
+       kmnist_img: the numpy array contains the MNIST data
+       
+     Return:
+       Individual and cumulative explained variances
+-    """
++ 
++
+     _img = kmnist_img.astype(np.float32)
+     if len(_img.shape) == 3:
+         _img = reshape_3d_to_2d(_img)
+@@ -220,7 +247,7 @@ def compute_variance(kmnist_img: np.ndarray) -> (list, np.ndarray):
+ def plot_variance_explain(ind_var_exp: list, cum_var_exp: list,
+                           n_dimension: int=786, variance_limit: int=50
+                          ):
+-    """
++    
+     Function to plot the individual and cumulative explained variances 
+       with zoom into specific limit numbers
+     @Args:
+@@ -231,7 +258,7 @@ def plot_variance_explain(ind_var_exp: list, cum_var_exp: list,
+       
+     Return:
+       No object returned, only visualization on console / notebook
+-    """
++
+     # Trace 1 and 2 will act as partial plot, whereas 3 and 4 will be full plot
+     trace1 = go.Scatter(x=list(range(n_dimension)),
+                         y=cum_var_exp,
+@@ -299,8 +326,7 @@ def plot_variance_explain(ind_var_exp: list, cum_var_exp: list,
+     
+ 
+ ind_var_exp, cum_var_exp = compute_variance(kmnist_train_image)
+-
+-
++"""
+ 
+ 
+ 
+diff --git a/oscar.py b/oscar.py
+index 8c03265..084b663 100644
+--- a/oscar.py
++++ b/oscar.py
+@@ -7,6 +7,7 @@ __author__   = "Mitsuka Kiyohara"
+ 
+ #Load in data set and name columns
+ mushroom_data = pd.read_csv("mushrooms.csv", header=None, names=['E/P','cap-shape','cap-surface','cap-color','bruises','odor','gill-attachment','gill-spacing','gill-size','gill-color','stalk-shape','stalk-root','stalk-surface-above-ring','stalk-surface-below-ring','stalk-color-above-ring','stalk-color-below-ring','veil-type','veil-color','ring-number','ring-type','spore-print-color','population','habitat']) 
++
+ mushroom_targets = mushroom_data[['E/P']]
+ 
+ 
+@@ -138,7 +139,7 @@ for model in models:
+     
+     for encode in encoders:
+         print("Testing with: ", encode)
+-        #encode data 
++        #encode data  
+         new_mushroom_data = pd.DataFrame(encode.fit_transform(train_inputs).toarray())
+         train_inputs = new_mushroom_data
+  
+@@ -156,6 +157,7 @@ for model in models:
+     
+     
+     
++    
+ 
+ 
+ 
