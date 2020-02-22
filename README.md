@@ -1,10 +1,8 @@
-# Your repo!
+# AT CS Programs
 
-This is your git repository for the 2019-20 ATCS class at Menlo School!
+These are all the program/assignments that I did for my AT CS class as a sophomore. 
+My teacher, Mr. Cesar used the NATO phonetic alphabet to name assignments, so for those who are confused by the random folder
+names, that was intentional. 
 
-As a reminder, here are the most frequently used git commands:
+To explain each assignment:
 
-* git status
-* git add *
-* git commit -m "Your commit message here"
-* git push
